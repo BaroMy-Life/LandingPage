@@ -575,6 +575,32 @@ button.filter-button:hover {
     opacity: 1;
 }
 
+.animate-logo {
+    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes pulse {
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: .5;
+    }
+}
+
+.fadeOutLoader {
+    opacity: 0;
+    width: 0;
+    height: 0;
+    transition: width 0.5s 0.5s, height 0.5s 0.5s, opacity 0.9s;
+}
+
+.fadeInContent {
+    opacity: 1 !important;
+    transition: width 0.5s 0.5s, display 0.5s 0.5s, opacity 0.5s;
+}
 
 /* chocolat style  */
 .chocolat-wrapper.chocolat-visible {
